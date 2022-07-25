@@ -1,0 +1,565 @@
+@charset 'utf-8';
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li{
+  list-style: none;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+img{
+  vertical-align: middle;
+  border: 0;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: Spoqa Han Sans,"Sans-serif";;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.2;
+}
+
+/* 공통요소 */
+.clearfix::after{
+  content:'';
+  position: relative;
+  display: block;
+  width:100%;
+  clear:both;
+}
+
+.inner{
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* 내용영역 */
+.wrap {
+  position: relative;
+  display: block;
+}
+
+/* 상단배너 */
+.popup{
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background: radial-gradient(circle at 50% 527%,#ff896a,#e23000 119%);
+}
+.popup .inner{
+  position: relative;
+  display: block;
+  height: 60px;
+  background: url('../images/popup.png') no-repeat center;
+}
+.btn{
+  position: absolute;
+  top:20px;
+  right:20px;
+  display: block; 
+  z-index: -1;
+}
+/* 헤더 영역 */
+.header{
+  position: fixed;
+  display: block;
+  background-color: #000;
+  outline: 0;
+  width: 100%;
+  height: 96px;
+  z-index: 999999;
+}
+
+.header-left{
+  position: relative;
+  display: block;
+}
+
+.logo{
+  position:relative;
+  display: block;
+  width:129px;
+  height: 48px;
+  background: url('../images/logo.svg') no-repeat center;
+  background-size: cover;
+  margin-top: 21px;
+  float: left;
+}
+
+.gnb{
+  position:relative;
+  display: block;
+  float: left;
+  margin: 37px;
+}
+
+.menu li{
+  position: relative;
+  display: block;
+  float: left;
+  padding-right: 14px;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+.header-right{
+  position: absolute;
+  top:0;
+  right:0;
+  display: block;
+  float: right;
+}
+
+.submenu{
+  position: relative;
+  display: block;
+  margin:37px;
+  float: left;
+
+}
+
+.submenu-right,
+.submenu-left {
+  position: relative;
+  display:block;
+  float: left;
+}
+
+.submenu ul li{
+  position: relative;
+  display:block;
+  font-size:14px;
+  cursor: pointer;
+  color:#ffffff;
+  margin-left:10px;
+  float: left;
+  cursor: pointer;
+}
+
+.submenu-split{
+  position: relative;
+  display: block;
+  top:7px;
+  width: 1px;
+  height: 12px;
+  margin: 0 10px 0 20px;
+  background-color:#fff;
+  float: left;
+}
+
+.gnb-cart{
+  position: relative;
+  display: block;
+  top:20px;
+  width:48px;
+  height: 48px;
+  background: url('../images/cart.svg') no-repeat center;
+  background-size: cover;
+  float: left;
+  cursor: pointer;
+}
+.gnb-list{
+  position: relative;
+  display: block;
+  top:20px;
+  margin-left: 8px;
+  width:48px;
+  height: 48px;
+  background: url('../images/list.svg') no-repeat center;
+  background-size: cover;
+  float: left;
+  cursor: pointer;
+}
+
+/* 비주얼 영역 */
+.visual {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.visual-main{
+  position:relative;
+  display: block;
+  height: 560px;
+  background: url('../images/visual.png') no-repeat center;
+  background-size: cover;
+}
+
+/* 이벤트 안내 */
+.event {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+}
+
+.sw-event{
+  width: 50%;
+  height: 176px;
+  float: left;
+}
+
+.sw-event a{
+  position: relative;
+  display: block;
+}
+
+.sw-event a img{
+  width: 576px;
+  height: auto;
+}
+
+.sw-event-control {
+  position: relative;
+  display: block;
+  bottom: 45px;
+  width: 103px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+  z-index: 999;
+}
+
+.sw-event-prev {
+  position: relative;
+  transform: rotate(180deg);
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../images/arrow.svg') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  margin: 8px 0 0 6px;
+  float: left;
+}
+
+.sw-event-pg {
+  position:relative;
+  display: block;
+  font-size: 13px;
+  width: 50px;
+  margin: 14px 0 0 7px;
+  text-align: center;
+  color: #000;
+  float: left;
+}
+
+.sw-event-pg .swiper-pagination-current {
+  font-weight: 600;
+}
+
+.sw-event-next {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../images/arrow.svg') no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  margin: 7px 0 0 6px;
+  float: left;
+}
+
+.event-right{
+  position:relative;
+  display: block;
+  width:50%;
+  float: left;
+}
+
+/* 베스트상품 */
+.good {
+  position: relative;
+  display: block;
+}
+
+.good h5{
+  display: block;
+  margin-top: 100px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.good-list{
+  position: relative;
+  display: block;
+  margin-top: 32px;
+}
+
+.good-list ul{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.good-list ul li{
+  position: relative;
+  display: block;
+  width:370px;
+  height:410px;
+  margin: 0 23px 100px 0;
+  background-color: #f9f7f8;
+  float: left;
+}
+
+.good-list ul li a{
+  position: relative;
+  display: block;
+}
+
+.good-list ul li a img{
+  position: relative;
+  display: block;
+  width: 276px;
+  height:276px;
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+.cart-bg{
+  position: relative;
+  width: 72px;
+  height: 72px;
+  box-shadow: 0 25px 10px -15px rgb(0 0 0 / 12%);
+  border: 2px solid #eee;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: -18px;
+  margin-left: 288px;
+  display: block;
+  cursor: pointer;
+}
+
+.cart-bg:hover{
+  background-color:#000000;
+}
+
+.cart-icon{
+  position: relative;
+  display: block;
+  width:68px;
+  height: 68px;
+  background: url('../images/cart-icon.svg') no-repeat center;
+  background-size: cover;
+}
+
+.cart-icon:hover{
+  filter:brightness(0) invert(1)
+}
+
+.good-list ul li h6{
+  position:relative;
+  display: block;
+  width:376px;
+  height:25.78px;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+}
+
+.good-list ul li p{
+  position:relative;
+  display: block;
+  width:376px;
+  font-size: 16px;
+  color: #9b9b9b;
+  cursor: pointer;
+}
+
+.best-tag{
+  position: absolute;
+  left:20px;
+  top:20px;
+  display: block;
+  width: 75px;
+  height:30px;
+  background: url('../images/best-tag.svg') no-repeat center;
+  background-size: cover;
+  z-index: 9999;
+}
+
+/* 배너 영역 */
+.banner {
+  position: relative;
+  display: block;
+}
+
+.banner a img{
+  position: relative;
+  display: block;
+  width: 100%;
+  height:208px;
+  margin-top: 100px;
+}
+
+/* 푸터 영역 */
+.footer {
+  position: relative;
+  display: block;
+  margin-top: 150px;
+  border-top: 1px solid #bdbdbd;
+}
+
+.footer-nav{
+  position: relative;
+  display: block;
+}
+
+.footer-nav p{
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 23px;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.f-nav-right{
+  position: absolute;
+  top: 9px;
+  right: 0;
+  display: block;
+}
+
+.f-nav-right button{
+  width: 130px;
+  height: 40px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #212121;
+}
+
+.f-nav-right button i img{
+  margin:0;
+}
+
+.f-nav-right button span{
+  position: relative;
+  top:2px;
+  font-size: 13px;
+  color: #212121;
+}
+
+.f-nav-right img{
+  margin-left: 10px;
+}
+
+.f-split{
+  width: 100%;
+  height: 1px;
+  margin-top: 15px;
+  background-color: #eee;
+}
+
+.footer-main{
+  position: relative;
+  display: block;
+  margin-bottom: 20px;;
+}
+
+.f-logo{
+  position:relative;
+  display: block;
+  width: 82px;
+  aspect-ratio: auto 82 / 32;
+  height: 32px;
+  margin-top: 30px;
+}
+
+.f-main-left{
+  position: relative;
+  display: block;
+  margin-top: 16px;
+}
+
+.f-main-left span{
+  position: relative;
+  display: block;
+  color:#212121;
+  margin-right: 8px;
+  float: left;
+}
+
+.f-info{
+  color: #4bb8ce;
+  padding-right:3px;
+}
+
+.f-main-left p{
+  position: relative;
+  display: block;
+  color:#212121;
+  margin-top: 30px;
+}
+
+.f-main-right{
+  position: absolute;
+  top:-30px;
+  right:0;
+  display: block;
+  text-align: right;
+}
+
+.f-main-right h6{
+  font-size: 14px;
+  color:#000000;
+  font-weight: bold;
+}
+
+.f-main-right h3{
+  font-size: 24px;
+  margin: -9px 0 -9px 0;
+  font-weight: bold;
+}
+
+.f-main-right span{
+  font-size: 12px;
+  color: #757575;
+  margin: -15px 0 0;
+}
+
+.f-main-right p{
+  margin-top:10px;
+  font-size: 13px;
+  color:#000000;
+}
+
+.f-main-right button{
+  position: relative;
+  display: block;
+  float: left;
+  width: 88px;
+  height: 32px;
+  border: 1px solid #212121;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  margin: -10px 0 20px 8px;
+}
